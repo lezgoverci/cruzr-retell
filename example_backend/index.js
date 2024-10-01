@@ -5,7 +5,7 @@ const app = express();
 const port = 8080;
 
 // Middleware to parse JSON bodies
-app.use(cors());
+app.use(cors({ origin: '*' }));
 
 app.use(express.json());
 
