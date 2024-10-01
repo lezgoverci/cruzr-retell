@@ -79,7 +79,7 @@ const App = () => {
   async function registerCall(agentId: string): Promise<RegisterCallResponse> {
     try {
       // Update the URL to match the new backend endpoint you created
-      const response = await fetch("https://cruzr-retell-backend.vercel.app/create-web-call", {
+      const response = await fetch("https://cruzr-retell-backend.vercel.app/api/create-web-call", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
